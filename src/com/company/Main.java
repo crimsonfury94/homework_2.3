@@ -15,7 +15,6 @@ public class Main {
 
         ServiceStation serviceStation = new ServiceStation();
         serviceStation.check(car);
-        serviceStation.check(car);
         serviceStation.check(car1);
         serviceStation.check(truck);
         serviceStation.check(truck1);
