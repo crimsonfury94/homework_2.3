@@ -1,6 +1,6 @@
 package com.company;
 
-public class Bicycle extends Vehicle {
+public class Bicycle extends Vehicle implements Service {
 
 
     public Bicycle(String modelName, int wheelCount) {
@@ -9,5 +9,13 @@ public class Bicycle extends Vehicle {
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    @Override
+    public void checkVehicle() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
     }
 }

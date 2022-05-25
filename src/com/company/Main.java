@@ -13,7 +13,8 @@ public class Main {
         Bicycle bicycle = new Bicycle("Stels", 2);
         Bicycle bicycle1 = new Bicycle("BMC", 2);
 
-        Service serviceStation = new ServiceStation();
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.check(car);
         serviceStation.check(car);
         serviceStation.check(car1);
         serviceStation.check(truck);
@@ -21,5 +22,6 @@ public class Main {
         serviceStation.check(bicycle);
         serviceStation.check(bicycle1);
 
-        }
+
     }
+}

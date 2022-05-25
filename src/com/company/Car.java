@@ -1,7 +1,6 @@
 package com.company;
 
-public class Car extends Vehicle {
-
+public class Car extends Vehicle implements Service {
 
     public Car(String modelName, int wheelCount) {
         super(modelName, wheelCount);
@@ -13,5 +12,14 @@ public class Car extends Vehicle {
 
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
+    }
+
+    @Override
+    public void checkVehicle() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+        checkEngine();
     }
 }
