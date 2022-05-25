@@ -7,11 +7,11 @@ public class Car extends Vehicle implements Service {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку автомобиля");
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    private void checkEngine() {
+        System.out.println("Проверяем двигатель автомобиля");
     }
 
     @Override

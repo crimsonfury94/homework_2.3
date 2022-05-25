@@ -8,7 +8,7 @@ public class Bicycle extends Vehicle implements Service {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку велосипеда");
     }
 
     @Override
