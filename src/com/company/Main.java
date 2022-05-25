@@ -21,5 +21,5 @@ public class Main {
         serviceStation.check(bicycle);
         serviceStation.check(bicycle1);
 
+        }
     }
-}

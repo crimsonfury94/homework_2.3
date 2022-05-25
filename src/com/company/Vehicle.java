@@ -27,11 +27,4 @@ public abstract class Vehicle {
 
     public abstract void updateTyre();
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
 }
